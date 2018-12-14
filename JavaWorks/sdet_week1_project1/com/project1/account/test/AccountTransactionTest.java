@@ -50,7 +50,6 @@ public class AccountTransactionTest {
 	@Test(timeout = 100)
 	public void updateAcctPercentTest(){
 		AccountTransactionsLogic atl = new AccountTransactionsLogic();
-		
 		int retVal = atl.updateAccount(3,45);
 		assertEquals(2, retVal); // 2 is pass for update percent
 		
