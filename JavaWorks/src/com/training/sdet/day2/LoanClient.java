@@ -1,7 +1,5 @@
 package com.training.sdet.day2;
 
-import com.training.sdet.day2.assignment.lab1.VehicleLoan;
-
 public class LoanClient {
 
 	public static void main(String[] args) {

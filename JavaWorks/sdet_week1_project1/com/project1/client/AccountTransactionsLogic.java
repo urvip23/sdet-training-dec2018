@@ -3,6 +3,7 @@ package com.project1.client;
 import java.util.Scanner;
 
 import com.project1.dao.AccountDAO;
+import com.project1.entity.Account;
 import com.project1.standards.IAccountDAO;
 
 public class AccountTransactionsLogic {
@@ -40,11 +41,11 @@ public class AccountTransactionsLogic {
 	}
 	
 	//Get account by acct id
-	public int getAccountById(int acctId){
-		//dao.getAccount(acctId);
+	public Account getAccountById(int acctId){
+		
 		System.out.println("Account retrieved -");
 		System.out.println(dao.getAccount(acctId));
-		return 3;
+		return dao.getAccount(acctId);
 	}
 	
 }

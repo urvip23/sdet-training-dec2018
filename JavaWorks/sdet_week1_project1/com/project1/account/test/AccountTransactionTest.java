@@ -2,6 +2,8 @@ package com.project1.account.test;
 
 import static org.junit.Assert.*;
 
+import javax.print.DocFlavor.STRING;
+
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -9,6 +11,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 import com.project1.client.AccountTransactionsLogic;
+import com.project1.entity.Account;
 
 public class AccountTransactionTest {
 
@@ -53,10 +56,12 @@ public class AccountTransactionTest {
 		
 	}
 	
-	@Test(timeout = 100)
+	@Test(timeout = 1000)
 	public void getAccountByIdTest(){
 		AccountTransactionsLogic atl = new AccountTransactionsLogic();
-		atl.getAccountById(3);
+		String expVal = "Account [acctId=3, acctNo=C103, acctBal=3000.0, avgBal=2500.0, percent=45.0]";
+		Account actVal = atl.getAccountById(3);
+		assertEquals(expVal, actVal.toString());
 	}
 
 

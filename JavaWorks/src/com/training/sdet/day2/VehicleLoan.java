@@ -1,6 +1,4 @@
-package com.training.sdet.day2.assignment.lab1;
-
-import com.training.sdet.day2.Loan;
+package com.training.sdet.day2;
 
 public class VehicleLoan extends Loan{
 	
