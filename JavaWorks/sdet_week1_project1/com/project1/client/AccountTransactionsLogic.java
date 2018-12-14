@@ -39,4 +39,12 @@ public class AccountTransactionsLogic {
 		
 	}
 	
+	//Get account by acct id
+	public int getAccountById(int acctId){
+		//dao.getAccount(acctId);
+		System.out.println("Account retrieved -");
+		System.out.println(dao.getAccount(acctId));
+		return 3;
+	}
+	
 }

@@ -17,7 +17,7 @@ public class GetDBConnection {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			connection = DriverManager.getConnection
-					("jdbc:mysql://localhost/sdetdec?autoreconnect=true&useSSL=false", "root", "Hexaware@123");
+					("jdbc:mysql://localhost/sdetdec?autoreconnect=true&useSSL=falseallowPublicKeyRetrieval=true", "root", "Hexaware@123");
 			return connection;
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block

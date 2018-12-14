@@ -45,12 +45,18 @@ public class AccountTransactionTest {
 	}
 		
 	@Test(timeout = 100)
-	public void updateAcctPercent(){
+	public void updateAcctPercentTest(){
 		AccountTransactionsLogic atl = new AccountTransactionsLogic();
 		
-		int retVal = atl.updateAccount(1, 55);
+		int retVal = atl.updateAccount(3,45);
 		assertEquals(2, retVal); // 2 is pass for update percent
 		
+	}
+	
+	@Test(timeout = 100)
+	public void getAccountByIdTest(){
+		AccountTransactionsLogic atl = new AccountTransactionsLogic();
+		atl.getAccountById(3);
 	}
 
 
