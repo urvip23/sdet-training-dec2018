@@ -35,7 +35,7 @@ public class AccountTransactionTest {
 	AccountTransactionsLogic atl = null;
 	
 	//100 ms check
-	@Test(timeout = 100)
+	@Test(timeout = 1000)
 	public void getAllAcctsTest(){
 		AccountTransactionsLogic atl = new AccountTransactionsLogic();
 			
