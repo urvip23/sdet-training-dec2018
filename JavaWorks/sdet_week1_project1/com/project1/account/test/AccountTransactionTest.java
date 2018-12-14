@@ -56,7 +56,7 @@ public class AccountTransactionTest {
 		
 	}
 	
-	@Test(timeout = 1000)
+	@Test(timeout = 100)
 	public void getAccountByIdTest(){
 		AccountTransactionsLogic atl = new AccountTransactionsLogic();
 		String expVal = "Account [acctId=3, acctNo=C103, acctBal=3000.0, avgBal=2500.0, percent=45.0]";
