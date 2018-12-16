@@ -18,10 +18,10 @@ public abstract class Car extends Vehicle{
 		System.out.println("Car has " + this.capacity + " liters capacity.");
 	}
 
-	@Override
-	public void move() {
-		System.out.println("My car is moving at speed " + this.getSpeed() + "mph.");
-	}
+	public abstract void move();
+	//{
+		//System.out.println("My car is moving at speed " + this.getSpeed() + "mph.");
+	//}
 
 	@Override
 	public void brake() {

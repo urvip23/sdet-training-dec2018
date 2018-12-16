@@ -4,15 +4,17 @@ public class VehicleClient {
 	
 	public static void display(Vehicle v) {
 		System.out.println("--------------------------------------------");
-		v.move();
+		//v.move();
 		v.brake();
 		
 		if(v instanceof BmwCar){
 				((Car)v).doors();
 				((Car)v).fuelCapacity();
-				((BmwCar)v).mileage();
+				((BmwCar)v).move();
+				 System.out.println("My BMW car mileage is " +((BmwCar)v).mileage() + " mpg.");
 				
 		}else if (v instanceof Truck){
+				((Truck)v).move();
 				((Truck)v).load();
 				((Truck)v).totalLength();	
 		}
@@ -29,9 +31,9 @@ public class VehicleClient {
 		
 		//c = BmwCar(40,4,20,75);
 		vehicles[0] = new Truck(4000, 51, 65);
-		vehicles[1] = new BmwCar(40,4,20, 75);
+		vehicles[1] = new BmwCar(4,20, 75);
 		vehicles[2] = new Truck(1500, 49, 40);
-		vehicles[3] = new BmwCar(10, 70, 130, 80);
+		vehicles[3] = new BmwCar(2,15, 80);
 		
 //		
 //		for(int i=0; i<vehicles.length; i++){
