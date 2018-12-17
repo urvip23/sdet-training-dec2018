@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="81" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+    <groups>
+      <group name="Login">
+        <method signature="TestNG_ShoppingCart.LoginTest1()[pri:0, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="LoginTest1" class="com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart"/>
+        <method signature="TestNG_ShoppingCart.LoginTest2()[pri:1, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="LoginTest2" class="com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart"/>
+      </group> <!-- Login -->
+    </groups>
+    <test name="Default test" duration-ms="81" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+      <class name="com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart">
+        <test-method status="PASS" signature="BeforeLogin()[pri:0, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="BeforeLogin" is-config="true" duration-ms="6" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeLogin -->
+        <test-method status="PASS" signature="LoginTest1()[pri:0, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="LoginTest1" duration-ms="6" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest1 -->
+        <test-method status="PASS" signature="LoginTest2()[pri:1, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="LoginTest2" duration-ms="6" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginTest2 -->
+        <test-method status="PASS" signature="AfterLogin()[pri:0, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="AfterLogin" is-config="true" duration-ms="1" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterLogin -->
+        <test-method status="PASS" signature="SearchTest()[pri:2, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="SearchTest" duration-ms="3" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SearchTest -->
+        <test-method status="PASS" signature="AddItemTest()[pri:3, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="AddItemTest" duration-ms="1" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddItemTest -->
+        <test-method status="PASS" signature="ModifyItemTest()[pri:4, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="ModifyItemTest" duration-ms="2" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ModifyItemTest -->
+        <test-method status="PASS" signature="CheckoutTest()[pri:5, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="CheckoutTest" duration-ms="1" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutTest -->
+        <test-method status="PASS" signature="OrderPlacedTest()[pri:6, instance:com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart@1d057a39]" name="OrderPlacedTest" duration-ms="2" started-at="2018-12-17T21:46:41Z" finished-at="2018-12-17T21:46:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OrderPlacedTest -->
+      </class> <!-- com.training.sdet.day1.selenium.webdriver.TestNG_ShoppingCart -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
