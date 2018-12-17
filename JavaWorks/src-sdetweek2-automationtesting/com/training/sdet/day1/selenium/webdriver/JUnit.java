@@ -63,8 +63,10 @@ public class JUnit {
 	@Test
 	public void testText() throws Exception{
 		driver.get(baseUrl + "/");
-		String actualText = driver.findElement(By.id("blueBarDOMInspector")).getText();
-		System.out.println(actualText);
+		String expectedText = "Facebook";
+		String actualText = driver.findElement(By.cssSelector("#blueBarDOMInspector > div > div > div > div.lfloat._ohe > h1 > a > i")).getText();
+		//System.out.println(actualText);
+		Assert.assertEquals(expectedText,actualText);
 		System.out.println("This is Test Case 3");
 	}
 	
