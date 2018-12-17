@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.training.sdet.day1.selenium.webdriver;
+package com.training.sdet.day1.selenium.webdriver.junit;
 
 import static org.junit.Assert.assertEquals;
 
