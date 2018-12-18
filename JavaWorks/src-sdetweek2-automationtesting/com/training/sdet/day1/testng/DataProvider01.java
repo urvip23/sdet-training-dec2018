@@ -15,8 +15,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-//import com.relevantcodes.extentreports.ExtentReports;
-//import com.relevantcodes.extentreports.LogStatus;
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 /**
  * @author Urvi
@@ -25,11 +26,14 @@ import org.testng.annotations.Test;
 
 public class DataProvider01 {
 	
+	public ExtentReports extentReport;
+	public ExtentTest extentTest;
+	
 	@DataProvider
 	public Object[][] testdata_shoppingCart() {
 		return new Object[][] { 
 				//IE has issues with Go xpath
-			    new Object[] { "IPhone", "2", "Adam", "MIAMI BEACH", "FL" , "IE"},
+			    new Object[] { "IPhone", "2", "Adam", "MIAMI BEACH", "FL" , "FF"},
 				new Object[] { "TV", "3", "Brett", "MANHATTAN", "NY", "CH"},
 				new Object[] { "Canon", "4", "Christene", "ALPHARETTA", "GA", "FF"},
 				new Object[] { "Echo", "5", "David", "BOSTON", "MA", "CH"} 
@@ -50,8 +54,17 @@ public class DataProvider01 {
 		// Log.startTestCase(TestCaseName);
 
 		
-		//extentReport = new ExtentReports("C:\\121718\\Reports\\ExtentReport.html");
-		//extentTest = extentReport.startTest("tc_shoppingCartTesting");
+		extentReport = new ExtentReports("C:\\121718\\Reports\\ExtentReport.html", false);
+		
+		//Creating extent-config.xml
+		extentReport
+        .addSystemInfo("Host Name", "SDETTraining.com")
+        .addSystemInfo("Environment", "Fannie Mae Selenium Automation Testing")
+        .addSystemInfo("User Name", "UP");
+        //loading the external xml file (i.e., extent-config.xml) which was placed under the base directory
+        extentReport.loadConfig(new File(System.getProperty("user.dir")+"\\extent-config.xml"));
+		
+		extentTest = extentReport.startTest("tc_shoppingCartTesting");
 		
 		
 		 driver = ReUsableFunctions.OpenBrowser(runTestInBrowser, AUT_URL);
@@ -68,7 +81,7 @@ public class DataProvider01 {
 		driver.get(AUT_URL);
 
 		System.out.println("Opening Browser: " + runTestInBrowser);
-		//extentTest.log(LogStatus.INFO, "Opening Chrome Browser");
+		extentTest.log(LogStatus.INFO, "Opening Chrome Browser");
 		// Log.info("Opening Browser: " + runTestInBrowser);
 		/*
 		 * System.setProperty("webdriver.firefox.marionette",
@@ -79,7 +92,7 @@ public class DataProvider01 {
 
 		driver.findElement(By.name("txtSearch")).clear();
 		driver.findElement(By.name("txtSearch")).sendKeys(item2Search);
-		//extentTest.log(LogStatus.INFO, "Searching Item: " +item2Search);
+		extentTest.log(LogStatus.INFO, "Searching Item: " +item2Search);
 		// Log.info("Searching for Item: " + item2Search);
 		System.out.println("Searching for Item: " + item2Search);
 
@@ -149,9 +162,9 @@ public class DataProvider01 {
 		driver.quit();
 		System.out.println("End executing TestCaseName: " + TestCaseName);
 //		 Log.endTestCase(TestCaseName);
-//		 extentReport.endTest(extentTest);
-//		 extentReport.flush();
-//		 extentReport.close();
+		 extentReport.endTest(extentTest);
+		 extentReport.flush();
+		 extentReport.close();
 	}
 
 }
