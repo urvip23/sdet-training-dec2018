@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.training.sdet.day1.testng;
+package com.training.sdet.testng;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;

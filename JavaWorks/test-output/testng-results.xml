@@ -1,157 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63458" started-at="2018-12-18T19:55:52Z" finished-at="2018-12-18T19:56:56Z">
+  <suite name="Suite" duration-ms="79" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63458" started-at="2018-12-18T19:55:52Z" finished-at="2018-12-18T19:56:56Z">
-      <class name="com.training.sdet.day1.testng.DataProvider01">
-        <test-method status="PASS" signature="tc_shoppingCartTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sdet.day1.testng.DataProvider01@28d25987]" name="tc_shoppingCartTesting" duration-ms="18787" started-at="2018-12-18T19:55:52Z" data-provider="testdata_shoppingCart" finished-at="2018-12-18T19:56:11Z">
+    <test name="ThirdTest" duration-ms="65" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
+      <class name="com.training.sdet.testng.TestNGParametersDemo_XMLfile">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sdet.testng.TestNGParametersDemo_XMLfile@553f17c]" name="setUp" is-config="true" duration-ms="26" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[IPhone]]>
+                <![CDATA[Lolo]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[2]]>
+                <![CDATA[safari]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Adam]]>
+                <![CDATA[6.0]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[MIAMI BEACH]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[FL]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[FF]]>
+                <![CDATA[MAC]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_shoppingCartTesting -->
-        <test-method status="PASS" signature="tc_shoppingCartTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sdet.day1.testng.DataProvider01@28d25987]" name="tc_shoppingCartTesting" duration-ms="13847" started-at="2018-12-18T19:56:11Z" data-provider="testdata_shoppingCart" finished-at="2018-12-18T19:56:25Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_UsePetData()[pri:0, instance:com.training.sdet.testng.TestNGParametersDemo_XMLfile@553f17c]" name="tc_UsePetData" duration-ms="8" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_UsePetData -->
+      </class> <!-- com.training.sdet.testng.TestNGParametersDemo_XMLfile -->
+    </test> <!-- ThirdTest -->
+    <test name="FirstTest" duration-ms="64" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
+      <class name="com.training.sdet.testng.TestNGParametersDemo_XMLfile">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sdet.testng.TestNGParametersDemo_XMLfile@47c62251]" name="setUp" is-config="true" duration-ms="26" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[TV]]>
+                <![CDATA[Abby]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[3]]>
+                <![CDATA[ie]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Brett]]>
+                <![CDATA[20.0]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[MANHATTAN]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[NY]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[CH]]>
+                <![CDATA[MAC]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_shoppingCartTesting -->
-        <test-method status="PASS" signature="tc_shoppingCartTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sdet.day1.testng.DataProvider01@28d25987]" name="tc_shoppingCartTesting" duration-ms="17848" started-at="2018-12-18T19:56:25Z" data-provider="testdata_shoppingCart" finished-at="2018-12-18T19:56:43Z">
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_UsePetData()[pri:0, instance:com.training.sdet.testng.TestNGParametersDemo_XMLfile@47c62251]" name="tc_UsePetData" duration-ms="7" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tc_UsePetData -->
+      </class> <!-- com.training.sdet.testng.TestNGParametersDemo_XMLfile -->
+    </test> <!-- FirstTest -->
+    <test name="SecondTest" duration-ms="78" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
+      <class name="com.training.sdet.testng.TestNGParametersDemo_XMLfile">
+        <test-method status="PASS" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sdet.testng.TestNGParametersDemo_XMLfile@3abbfa04]" name="setUp" is-config="true" duration-ms="26" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Canon]]>
+                <![CDATA[Dodo]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[4]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[Christene]]>
+                <![CDATA[26.0]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[ALPHARETTA]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[GA]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[FF]]>
+                <![CDATA[WINDOWS]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_shoppingCartTesting -->
-        <test-method status="PASS" signature="tc_shoppingCartTesting(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.training.sdet.day1.testng.DataProvider01@28d25987]" name="tc_shoppingCartTesting" duration-ms="12920" started-at="2018-12-18T19:56:43Z" data-provider="testdata_shoppingCart" finished-at="2018-12-18T19:56:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Echo]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[David]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[BOSTON]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[MA]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[CH]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="tc_UsePetData()[pri:0, instance:com.training.sdet.testng.TestNGParametersDemo_XMLfile@3abbfa04]" name="tc_UsePetData" duration-ms="10" started-at="2018-12-18T21:17:21Z" finished-at="2018-12-18T21:17:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tc_shoppingCartTesting -->
-      </class> <!-- com.training.sdet.day1.testng.DataProvider01 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- tc_UsePetData -->
+      </class> <!-- com.training.sdet.testng.TestNGParametersDemo_XMLfile -->
+    </test> <!-- SecondTest -->
+  </suite> <!-- Suite -->
 </testng-results>
