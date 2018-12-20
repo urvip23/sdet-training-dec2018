@@ -1,41 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-	<suite name="GRID TEST" parallel="tests" thread-count="3">
-
-	    <test name="GRID TEST WITH BROWSER FF">
-
-	    <parameter name ="browserType" value="firefox"/>
-
-	        <classes>
-
-	            <class name ="com.training.day4.seleniumgrid.SeleniumGridTests"/>
-
-	        </classes>
-
-	    </test>
-
-	    <test name="GRID TEST WITH  BROWSER IE">
-
-	    <parameter name ="browserType" value="internet explorer"/>
-
-           <classes>
-
-	            <class name ="com.training.day4.seleniumgrid.SeleniumGridTests"/>
-
-	        </classes>
-
-	    </test>
-	    
-	    <test name="GRID TEST WITH  BROWSER CHROME">
-
-	    <parameter name ="browserType" value="chrome"/>
-
-           <classes>
-
-	            <class name ="com.training.day4.seleniumgrid.SeleniumGridTests"/>
-
-	        </classes>
-
-	    </test>
-
-	</suite>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.training.sdet.day4.ddt.DDT_CSV"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

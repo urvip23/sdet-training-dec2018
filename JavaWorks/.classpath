@@ -29,5 +29,6 @@
 	<classpathentry kind="lib" path="C:/Selenium Automation jars/commons-io-2.6.jar"/>
 	<classpathentry kind="lib" path="C:/Selenium Automation jars/extentreports-2.41.2.jar"/>
 	<classpathentry kind="lib" path="C:/Selenium Automation jars/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="C:/Selenium Automation jars/javacsv.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
