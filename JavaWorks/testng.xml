@@ -1,32 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="3" name="Suite" parallel="tests">
-  <test name="FirstTest">
-  <parameter name="pet" value="Abby"/>
-  <parameter name="browser" value="ie"/>
-  <parameter name="version" value="20.0"/>
-  <parameter name="platform" value="MAC"/>
-    <classes>
-      <class name="com.training.sdet.testng.TestNGParametersDemo_XMLfile"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="SecondTest">
-  <parameter name="pet" value="Dodo"/>
-  <parameter name="browser" value="chrome"/>
-  <parameter name="version" value="26.0"/>
-  <parameter name="platform" value="WINDOWS"/>
-    <classes>
-      <class name="com.training.sdet.testng.TestNGParametersDemo_XMLfile"/>
-    </classes>
-  </test> <!-- Test -->
-  <test name="ThirdTest">
-  <parameter name= "pet" value="Lolo"/>
-  <parameter name="browser" value="ie"/>
-  <parameter name="browser" value="safari"/>
-  <parameter name="version" value="6.0"/>
-  <parameter name="platform" value="MAC"/>
-    <classes>
-      <class name="com.training.sdet.testng.TestNGParametersDemo_XMLfile"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+	<suite name="GRID TEST" parallel="tests" thread-count="3">
+
+	    <test name="GRID TEST WITH BROWSER FF">
+
+	    <parameter name ="browserType" value="firefox"/>
+
+	        <classes>
+
+	            <class name ="com.training.day4.seleniumgrid.SeleniumGridTests"/>
+
+	        </classes>
+
+	    </test>
+
+	    <test name="GRID TEST WITH  BROWSER IE">
+
+	    <parameter name ="browserType" value="internet explorer"/>
+
+           <classes>
+
+	            <class name ="com.training.day4.seleniumgrid.SeleniumGridTests"/>
+
+	        </classes>
+
+	    </test>
+	    
+	    <test name="GRID TEST WITH  BROWSER CHROME">
+
+	    <parameter name ="browserType" value="chrome"/>
+
+           <classes>
+
+	            <class name ="com.training.day4.seleniumgrid.SeleniumGridTests"/>
+
+	        </classes>
+
+	    </test>
+
+	</suite>

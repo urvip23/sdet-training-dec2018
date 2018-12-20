@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Default_suite">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-skipped">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Default_suite">
-                    <span>C:\Users\Huser\AppData\Local\Temp\testng-eclipse--147722599\testng-customsuite.xml</span>
+                    <span>C:\Users\Huser\AppData\Local\Temp\testng-eclipse--1214340279\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">1 method,  1 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods skipped suite-Default_suite"> (hide)</a> <!-- hide-methods skipped suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods skipped suite-Default_suite"> (show)</a> <!-- show-methods skipped suite-Default_suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content skipped suite-Default_suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.training.sdet.testng.DataProvider01" hash-for-method="tc_shoppingCartTesting(IPhone, 2, Adam, MIAMI BEACH, FL, FF)">tc_shoppingCartTesting(IPhone, 2, Adam, MIAMI BEACH, FL, FF)</a> <!-- method navigator-link -->
+                        <img width="3%" src="skipped.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Default_suite" title="com.training.day4.seleniumgrid.SeleniumGridTests" hash-for-method="GridTest">GridTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content skipped suite-Default_suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,35 +117,132 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.training.sdet.testng.DataProvider01</span>
+              <img src="skipped.png"/>
+              <span class="class-name">com.training.day4.seleniumgrid.SeleniumGridTests</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="tc_shoppingCartTesting(IPhone, 2, Adam, MIAMI BEACH, FL, FF)">
-                  </a> <!-- tc_shoppingCartTesting(IPhone, 2, Adam, MIAMI BEACH, FL, FF) -->
-                  <span class="method-name">tc_shoppingCartTesting</span>
-                  <span class="parameters">(IPhone, 2, Adam, MIAMI BEACH, FL, FF)</span>
+                  <a name="GridTest">
+                  </a> <!-- GridTest -->
+                  <span class="method-name">GridTest</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Unable to parse remote response: &lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;/assets/displayhelpservlet.css&quot; media=&quot;all&quot;/&gt;
+  &lt;link href=&quot;/assets/favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-icon&quot; /&gt;
+  &lt;script src=&quot;/assets/jquery-3.1.1.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script src=&quot;/assets/displayhelpservlet.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    var json = Object.freeze(&apos;{&quot;consoleLink&quot;: &quot;\u002fgrid\u002fconsole&quot;,&quot;type&quot;: &quot;Grid Hub&quot;,&quot;class&quot;: &quot;org.openqa.grid.web.servlet.DisplayHelpHandler$DisplayHelpServletConfig&quot;,&quot;version&quot;: &quot;3.141.59&quot;}&apos;);
+  &lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id=&quot;content&quot;&gt;
+  &lt;div id=&quot;help-heading&quot;&gt;
+    &lt;h1&gt;&lt;span id=&quot;logo&quot;&gt;&lt;/span&gt;&lt;/h1&gt;
+    &lt;h2&gt;Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt;&amp;nbsp;v.&lt;span class=&quot;se-version&quot;&gt;&lt;/span&gt;&lt;/h2&gt;
+  &lt;/div&gt;
+
+  &lt;div id=&quot;content-body&quot;&gt;
+    &lt;p&gt;
+      Whoops! The URL specified routes to this help page.
+    &lt;/p&gt;
+    &lt;p&gt;
+      For more information about Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; please see the
+      &lt;a class=&quot;se-docs&quot;&gt;docs&lt;/a&gt; and/or visit the &lt;a class=&quot;se-wiki&quot;&gt;wiki&lt;/a&gt;.
+      &lt;span id=&quot;console-item&quot;&gt;
+        Or perhaps you are looking for the Selenium &lt;span class=&quot;se-type&quot;&gt;&lt;/span&gt; &lt;a class=&quot;se-console&quot;&gt;console&lt;/a&gt;.
+      &lt;/span&gt;
+    &lt;/p&gt;
+    &lt;p&gt;
+      Happy Testing!
+    &lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;footer id=&quot;help-footer&quot;&gt;
+      Selenium is made possible through the efforts of our open source community, contributions from
+      these &lt;a href=&quot;https://github.com/SeleniumHQ/selenium/blob/master/AUTHORS&quot;&gt;people&lt;/a&gt;, and our
+      &lt;a href=&quot;http://www.seleniumhq.org/sponsors/&quot;&gt;sponsors&lt;/a&gt;.
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:144)
+	at com.training.day4.seleniumgrid.SeleniumGridTests.setUp(SeleniumGridTests.java:96)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:455)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:520)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.json.JsonException: Unable to determine type from: &lt;. Last 1 characters read: &lt;
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:53&apos;
+System info: host: &apos;MININT-U05URH4&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.peek(JsonInput.java:122)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:140)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 35 more
+
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
+          </div> <!-- suite-Default_suite-class-skipped -->
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Huser\AppData\Local\Temp\testng-eclipse--147722599\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Huser\AppData\Local\Temp\testng-eclipse--1214340279\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Default suite&quot;&gt;
+  &lt;parameter name=&quot;browserType&quot; value=&quot;chrome&quot;/&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;2&quot; name=&quot;Default test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.training.sdet.testng.DataProvider01&quot;/&gt;
+      &lt;class name=&quot;com.training.day4.seleniumgrid.SeleniumGridTests&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -187,14 +284,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'tc_shoppingCartTesting')
-data.setCell(0, 2, 'com.training.sdet.testng.DataProvider01')
-data.setCell(0, 3, 19065);
+data.setCell(0, 1, 'GridTest')
+data.setCell(0, 2, 'com.training.day4.seleniumgrid.SeleniumGridTests')
+data.setCell(0, 3, 1);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 1 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -220,10 +317,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.training.sdet.testng.DataProvider01</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">tc_shoppingCartTesting(IPhone, 2, Adam, MIAMI BEACH, FL, FF)</span>
+              <div class="chronological-class-name">com.training.day4.seleniumgrid.SeleniumGridTests</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GridTest</span>
+                <span class="method-start">-1545323893287 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
