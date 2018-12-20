@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import com.training.businesslogic.MyBusinessLogic;
+//import com.training.businesslogic.MyBusinessLogic;
 
 public class MyBusinessLogicTest {
 	
