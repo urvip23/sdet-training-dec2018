@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [GRID TEST]" parallel="tests">
+  <test thread-count="3" name="GRID TEST WITH  BROWSER CHROME(failed)" parallel="tests">
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.training.day4.seleniumgrid.SeleniumGridTests">
+        <methods>
+          <include name="GridTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.day4.seleniumgrid.SeleniumGridTests -->
+    </classes>
+  </test> <!-- GRID TEST WITH  BROWSER CHROME(failed) -->
+  <test thread-count="3" name="GRID TEST WITH  BROWSER IE(failed)" parallel="tests">
+    <parameter name="browserType" value="internet explorer"/>
+    <classes>
+      <class name="com.training.day4.seleniumgrid.SeleniumGridTests">
+        <methods>
+          <include name="GridTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.day4.seleniumgrid.SeleniumGridTests -->
+    </classes>
+  </test> <!-- GRID TEST WITH  BROWSER IE(failed) -->
+  <test thread-count="3" name="GRID TEST WITH BROWSER FF(failed)" parallel="tests">
+    <parameter name="browserType" value="firefox"/>
+    <classes>
+      <class name="com.training.day4.seleniumgrid.SeleniumGridTests">
+        <methods>
+          <include name="GridTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.training.day4.seleniumgrid.SeleniumGridTests -->
+    </classes>
+  </test> <!-- GRID TEST WITH BROWSER FF(failed) -->
+</suite> <!-- Failed suite [GRID TEST] -->
