@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.training.day4.seleniumgrid;
+package com.training.day4.seleniumgrid.saucelabs;
 
 /**
  * @author Urvi
