@@ -1,0 +1,3 @@
+Jenkins 
+username: admin
+pwd: c70c13e17f9f43ddbf9bdbc6901e7643

@@ -1,0 +1,7 @@
+Lab2 - Dec 6th
+
+Ask the user a question
+Start another thread that will increment count after every 1 sec.
+Moment the user to answers, interrupt the thread and
+Display count and correctness of the answer
+Use Runnable interface.

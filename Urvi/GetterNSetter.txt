@@ -1,0 +1,29 @@
+//Getter and Setter
+	//Use same variable name which you are trying to get the value for
+	
+	//Use Setter to set the values
+	public void setAccId(int accId) {
+			this.accId = accId;
+		}
+	
+	public void setAccBalance(double accBalance) {
+			this.accBalance = accBalance;
+	    }
+	
+	public void setAccHolderName(String accHolderName) {
+			this.accHolderName = accHolderName;
+	    }
+	
+	//Use Getter to get the values
+	public int getAccId() {
+		return this.accId;
+		}
+	
+	public double getAccBalance() {
+		return this.getAccBalance();
+	}
+	
+	public String getAccHolderName(){
+		return this.accHolderName;
+
+	}

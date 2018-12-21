@@ -1,0 +1,10 @@
+Day 5
+
+create table Employee(
+	empid int(5) primary key,
+	empname varchar(50) not null,
+	empsal decimal(9,2),
+	empemail varchar(100));
+
+All code available at the below location -
+github.com/adithnaveen

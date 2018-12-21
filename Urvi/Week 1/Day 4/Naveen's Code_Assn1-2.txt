@@ -1,0 +1,176 @@
+package com.training.sdet.day4.threads;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Scanner;
+
+public class Dictionary {
+
+	static  Map<String, String[]> words = 
+				new HashMap<>(); 
+	public static void main(String[] args) {
+
+		words.put("hello1", new String[] {"hello", "hola"}); 
+		words.put("hello2", new String[] {"hello", "hola"}); 
+		words.put("hello3", new String[] {"hello", "hola"}); 
+		words.put("hello4", new String[] {"hello", "hola"}); 
+		
+		Scanner sc = new Scanner(System.in); 
+
+		while(true) {
+			System.out.println("enter the word ");
+			String word = sc.next(); 
+
+			String [] strs = words.get(word); 
+			
+			if(strs != null) {
+				Arrays.asList(strs).forEach(
+						System.out :: println);
+			}else {
+				System.out.println("Sorry element not found ");
+				System.out.println("Would you like to add Y/N");
+				String ch = sc.next(); 
+				if(ch.equals("Y")) {
+					System.out.println("Enter word");
+					String newWord = sc.next(); 
+					// TODO 
+					System.out.println("Hey please enter synonym and <enter to quit>");
+					String newSynonyms [] = new String [5];  
+					int count =0; 
+					while(true) {
+						newSynonyms[count++] = sc.next();
+						System.out.println("Do you want to continue Y/N");
+						
+						if(sc.next().equals("n") || 
+								sc.next().equals("")) {
+							System.out.println("thanks ");
+						}
+						
+						words.put(newWord, newSynonyms); 
+						display(words); 
+						break; 
+					}
+				}else {
+					System.out.println("Okay you did not add element");
+				}
+				
+				
+			}
+			
+		}
+
+		
+	}
+	private static void display(Map<String, String[]> words2) {
+		
+		Iterator itr = words2.entrySet().iterator(); 
+		
+		while(itr.hasNext()){
+			Map.Entry temp = (Entry) itr.next(); 
+			System.out.println(temp.getKey() 
+					+", " + temp.getValue());
+		} 
+		
+	}
+}
+
+
+------------------------------------------------------------------------
+
+package com.training.sdet.day4.threads;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+import java.util.Scanner;
+
+class Question {
+	private String question;
+	private List<String> options;
+	private int correctOption;
+
+	@Override
+	public String toString() {
+		return "Question [question=" + question + ", options=" + options + ", correctOption=" + correctOption + "]";
+	}
+
+	public Question() {
+	}
+
+	public Question(String question, List<String> options, int correctOption) {
+		super();
+		this.question = question;
+		this.options = options;
+		this.correctOption = correctOption;
+	}
+
+	public String getQuestion() {
+		return question;
+	}
+
+	public void setQuestion(String question) {
+		this.question = question;
+	}
+
+	public List<String> getOptions() {
+		return options;
+	}
+
+	public void setOptions(List<String> options) {
+		this.options = options;
+	}
+
+	public int getCorrectOption() {
+		return correctOption;
+	}
+
+	public void setCorrectOption(int correctOption) {
+		this.correctOption = correctOption;
+	}
+
+}
+
+public class Quiz implements Runnable {
+
+	static List<Question> questions = new ArrayList<>();
+
+	static {
+		questions.add(
+				new Question("when was java invented1", Arrays.asList(new String[] { "1995", "1992", "1993" }), 1));
+
+		questions.add(
+				new Question("when was java invented2", Arrays.asList(new String[] { "1995", "1992", "1993" }), 1));
+
+		questions.add(
+				new Question("when was java invented3", Arrays.asList(new String[] { "1995", "1992", "1993" }), 1));
+
+	}
+
+	static long questionShown; 
+	
+	public static void main(String[] args) {
+		questionShown  = new Date().getTime(); 
+	}
+
+	@Override
+	public void run() {
+		Scanner sc = new Scanner(System.in); 
+		
+		for (Question temp : questions) {
+			
+			System.out.println(temp.getQuestion());
+			System.out.println("Enter Your choice ");
+			int choice = sc.nextInt(); 
+			long answeredTime  =   new Date().getTime();
+			if((answeredTime - questionShown) > 5000) {
+//				throw new TooLateException("Timed Out"); 
+			}
+			
+			
+		}
+	}
+}
